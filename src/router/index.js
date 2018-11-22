@@ -25,20 +25,19 @@ import Product from '@/components/page/Product/Product'
 //注册路由
 Vue.use(Router)
 
- const router = new Router({
-	 mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
-			props:true
-    },
+const router = new Router({
+	mode: 'history',
+	routes: [{
+			path: '/',
+			name: 'home',
+			component: Home,
+			props: true
+		},
 		{
 			path: '/cate',
 			name: 'cate',
 			component: Cate,
-			props:true
+			props: true
 		},
 		{
 			path: '/mine',
@@ -69,42 +68,42 @@ Vue.use(Router)
 			path: '/cart',
 			name: 'cart',
 			component: Cart,
-			props:true
+			props: true
 		},
 		{
 			path: '/found',
 			name: 'found',
 			component: Found,
-			props:true
+			props: true
 		},
 		{
 			path: '/accessory',
 			name: 'accessory',
 			component: Accessory,
-			props:true
+			props: true
 		},
 		{
 			path: '/phone',
 			name: 'phone',
 			component: Phone,
-			props:true
+			props: true
 		},
 		{
 			path: '/product',
 			name: 'product',
 			component: Product,
-			props:true
+			props: true
 		},
 		{
 			path: '/notFound',
 			name: 'notFound',
 			component: NotFound,
-			props:true
+			props: true
 		},
 		{
 			path: '**',
-			redirect:'/notFound'
+			redirect: '/notFound'
 		}
-  ]
+	],
 })
 export default router

@@ -1,4 +1,5 @@
 <template>
+
   <div id="app">
 		<Aheader></Aheader>
 		<router-view></router-view>
