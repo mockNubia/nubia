@@ -1,9 +1,12 @@
 <template>
 	<div class="showProductList">
-		<div class="showProductItem"
-		v-for = "(product,index) in showProducts"
-		:key = product.sid
-		:style = "{marginRight : (index+1)%2 == 0 ? '0px' : '2px',background : $route.path != '/' ? '#fff' : '#f4f3ef'}"
+		<router-link 
+			tag = 'div'
+			class="showProductItem"
+			v-for = "(product,index) in showProducts"
+			:key = product.sid
+			:style = "{marginRight : (index+1)%2 == 0 ? '0px' : '2px',background : $route.path != '/' ? '#fff' : '#f4f3ef'}"
+			:to = "{name:'product',query:{id:product.sid}}"
 		>
 			<div class="product_img">
 				<img :src="`../../../static/imgs/${product.image}`" alt="">
@@ -24,15 +27,14 @@
 					<span class = 'price'>￥{{product.price}}元</span>
 				</p>
 			</div>
-			
-		</div>
+		</router-link>
 	</div>
 	
 </template>
 <script>
 	export default {
 		name:'ShowProductItem',
-		props:['type','showProduct','changeId'],
+		props:['type','showProduct','changeId','newSort','priceSort'],
 		data(){
 			return{
 			}
@@ -41,12 +43,37 @@
 		},
 		computed : {
 			showProducts : function(){
+				if(!this.$route.query.id){
+					return this.showProduct;
+				}
 				if(this.changeId == 100){
 					return this.showProduct;
 				}
 				return this.showProduct.filter((item)=>{
 						return item.id == this.changeId;
 					})
+			}
+		},
+		watch:{
+			priceSort:function(newVal,oldVal){
+				if(newVal){
+					this.showProduct.sort((a,b)=>{
+						return a.price-b.price
+					})
+				}else{
+					this.showProduct.sort((a,b)=>{
+						return b.price-a.price
+					})
+				}
+			},
+			newSort:function(newVal,oldVal){
+				if(newVal){
+					this.showProduct.sort((a,b)=>{
+						return b.sid-a.sid
+					})
+				}else{
+					return false
+				}
 			}
 		}
 	}
@@ -83,5 +110,4 @@
 		}
 		
 	}
-	
 </style>

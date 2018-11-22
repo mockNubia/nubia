@@ -1,11 +1,17 @@
 <template>
 	<div class="accessory main">
-		<SearchList :changeSearchId = 'changeSearchId'></SearchList>
+		<SearchList 
+		:changeSearchId = 'changeSearchId'
+		:isPriceSort = '_isPriceSort'
+		:isNewSort = '_isNewSort'
+		></SearchList>
 		<div class="showList">
 			<ShowProductItem
 			    :type = 'type'
 				:showProduct = 'accList'
 				:changeId = 'searchId'
+				:newSort = 'newSort'
+				:priceSort = 'priceSort'
 			></ShowProductItem>
 		</div>
 	</div>
@@ -21,7 +27,9 @@
 			return{
 				accList:[],
 				type:2,
-				searchId:100
+				searchId:100,
+				priceSort:false,
+				newSort:false,
 			}
 		},
 		components:{
@@ -38,7 +46,6 @@
 			},
 			isShowHeader(){
 				var path = this.$route.path.slice(1);
-				console.log(path);
 				switch(path){
 					case 'accessory':
 					this.aheader({boolen:true});
@@ -56,6 +63,13 @@
 			},
 			changeSearchId(id){
 				this.searchId = id;
+			},
+			_isPriceSort(){
+				this.priceSort = !this.priceSort;
+				this.newSort = false;
+			},
+			_isNewSort(){
+				this.newSort = true;
 			}
 		},
 		created(){

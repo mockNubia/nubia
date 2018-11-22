@@ -23,7 +23,7 @@
 			"spec_value": "8GB+128GB",
 			"price": 3699.0,
 			"origin_price": 3699.0,
-			"image": "pic/154097571371.png",
+			"image": "pic/15409757545.png",
 			"short_link": "nubiaX/gray8gb128gb",
 			"member_price": ""
 		}, {
@@ -47,7 +47,7 @@
 			"spec_value": "8GB+128GB",
 			"price": 3299.0,
 			"origin_price": 3299.0,
-			"image": "pic/15361362729.png",
+			"image": "pic/153612810350.png",
 			"short_link": "nubiaz18/black8gb128gb",
 			"member_price": ""
 		}, {
@@ -95,7 +95,7 @@
 			"spec_value": "8GB+128GB",
 			"price": 2699.0,
 			"origin_price": 2999.0,
-			"image": "pic/152593295531.png",
+			"image": "pic/152593298339.png",
 			"short_link": "nubiaredmagic/black8gb128gb",
 			"member_price": ""
 		}, {
@@ -131,7 +131,7 @@
 			"spec_value": "6GB+64GB",
 			"price": 2299.0,
 			"origin_price": 2499.0,
-			"image": "pic/153716573657.jpg",
+			"image": "pic/153481678448.jpg",
 			"short_link": "nubiaredmagic/red6gb64gb",
 			"member_price": "{\"status\":0,\"price\":0,\"rankid\":0,\"rankname\":\"\"}"
 		}, {
@@ -167,7 +167,7 @@
 			"spec_value": "6GB+128GB",
 			"price": 1799.0,
 			"origin_price": 1799.0,
-			"image": "pic/152583158615.png",
+			"image": "pic/152410788650.png",
 			"short_link": "nubiaz18mini/blue6gb128gb",
 			"member_price": ""
 		}, {
@@ -179,7 +179,7 @@
 			"spec_value": "6GB+128GB",
 			"price": 1799.0,
 			"origin_price": 1799.0,
-			"image": "pic/152722592018.png",
+			"image": "pic/152274208068.png",
 			"short_link": "nubiaz18mini/black6gb128gb",
 			"member_price": "{\"status\":0,\"price\":0,\"rankid\":0,\"rankname\":\"\"}"
 		}, {
@@ -311,7 +311,7 @@
 			"spec_value": "8GB+128GB",
 			"price": 2999.0,
 			"origin_price": 3999.0,
-			"image": "pic/15009495681.jpg",
+			"image": "pic/150094954758.jpg",
 			"short_link": "nubiaZ17/blackgold8g",
 			"member_price": "{\"status\":0,\"price\":0,\"rankid\":0,\"rankname\":\"\"}"
 		}, {
@@ -335,7 +335,7 @@
 			"spec_value": "8GB+64GB",
 			"price": 2499.0,
 			"origin_price": 2799.0,
-			"image": "pic/150301772035.jpg",
+			"image": "pic/149725499137.jpg",
 			"short_link": "nubiaZ17/black_8gb_64gb",
 			"member_price": ""
 		}, {
@@ -347,7 +347,7 @@
 			"spec_value": "6GB+64GB",
 			"price": 2299.0,
 			"origin_price": 2499.0,
-			"image": "pic/15382991415.jpg",
+			"image": "pic/150301783434.jpg",
 			"short_link": "nubiaz17/gold1",
 			"member_price": ""
 		}, {
@@ -443,7 +443,7 @@
 			"spec_value": "移动版",
 			"price": 1299.0,
 			"origin_price": 1299.0,
-			"image": "pic/150122003314.jpg",
+			"image": "pic/150121993433.jpg",
 			"short_link": "m2_fluency/m_black",
 			"member_price": ""
 		}, {
@@ -515,7 +515,7 @@
 			"spec_value": "4G+32G",
 			"price": 1499.0,
 			"origin_price": 1499.0,
-			"image": "pic/149007207029.jpg",
+			"image": "pic/149007203157.jpg",
 			"short_link": "nubiam2lite/black32g",
 			"member_price": ""
 		}, {
@@ -527,7 +527,7 @@
 			"spec_value": "4G+32G",
 			"price": 1499.0,
 			"origin_price": 1499.0,
-			"image": "pic/149007209315.jpg",
+			"image": "pic/149007205260.jpg",
 			"short_link": "nubiam2lite/gold32g",
 			"member_price": ""
 		}, {
@@ -575,7 +575,7 @@
 			"spec_value": "6GB+128GB",
 			"price": 2999.0,
 			"origin_price": 2999.0,
-			"image": "pic/151150043033.jpg",
+			"image": "pic/150408329229.jpg",
 			"short_link": "",
 			"member_price": ""
 		}, {
@@ -611,7 +611,7 @@
 			"spec_value": "6GB+64GB",
 			"price": 1999.0,
 			"origin_price": 1999.0,
-			"image": "pic/153734677481.png",
+			"image": "pic/15373474733.png",
 			"short_link": "",
 			"member_price": ""
 		}]

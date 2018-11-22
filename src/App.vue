@@ -1,10 +1,12 @@
 <template>
+
   <div id="app">
 		<Aheader></Aheader>
 		<router-view></router-view>
 		<Tabbar></Tabbar>
   </div>
 </template>
+
 
 <script>
 	import Aheader from './components/common/Aheader'
@@ -20,8 +22,10 @@ export default {
 }
 </script>
 
+
 <style lang = 'scss'>
 	#app{
 		font-size:3.2rem;
+		overflow: hidden;
 	}
 </style>

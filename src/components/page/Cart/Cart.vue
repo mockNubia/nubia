@@ -1,22 +1,31 @@
 <template>
 	<div class="cart">
-		this is buycart
+		<div class="unCart">
+			<CartHeader></CartHeader>
+			<BuyCart></BuyCart>
+		</div>
 	</div>
 </template>
 <script>
 	import { mapActions } from 'vuex'
+	import CartHeader from './CartHeader'
+	import BuyCart from './BuyCart'
+
 	export default {
 		name:'Cart',
 		data(){
 			return{
-				num:[]
+				num:[],
+				testStr:''
 			}
+		},
+		components:{
+			CartHeader,BuyCart
 		},
 		methods:{
 			...mapActions(['aheader']),
 			isShowHeader(){
 				var path = this.$route.path.slice(1);
-				console.log(path);
 				switch(path){
 					case 'cart':
 					this.aheader({boolen:false});
@@ -25,6 +34,8 @@
 					this.aheader({boolen:true});
 				}
 			}
+		},
+		watch:{
 		},
 		created(){
 			this.isShowHeader()

@@ -16,10 +16,10 @@
 				:key = "index"
 				:to = '{name:nav.path}'
 				>
-				<div @click = "navShow = !navShow">
-					<p :class = "'fa fa-lg fa-'+nav.icon"></p>
-					<p >{{nav.name}}</p>
-				</div>
+					<div @click = "navShow = !navShow">
+						<i :class = "'fa fa-'+nav.icon"></i>
+						<p >{{nav.name}}</p>
+					</div>
 				</router-link>
 			</div>
 		</transition>
@@ -63,12 +63,12 @@
 		justify-content: center;
 		align-items: center;
 		font-size:4rem;
-		height:5.22rem;
 		position:fixed;
 		z-index:99;
 		top:0;
 		left:0;
 		right:0;
+		height: 5.22rem;
 		background: #fff;
 		padding:0 2rem;
 		.back,.more{
@@ -90,6 +90,7 @@
 		.navitem{
 			flex:1;
 			text-align:center;
+			line-height: 2.64rem;
 			color:#464646;
 		}
 	}
