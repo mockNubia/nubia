@@ -1,0 +1,27 @@
+{
+	"code": 0,
+	"request_tag": "73d16c0c-a2fe-4209-b603-67b76aaa7726",
+	"data": {
+		"result": [{
+			"id": 31,
+			"name": "保护壳",
+			"image": "productcate/145569239481.png"
+		}, {
+			"id": 30,
+			"name": "皮套",
+			"image": "productcate/145569240480.png"
+		}, {
+			"id": 29,
+			"name": "贴膜",
+			"image": "productcate/145569241389.png"
+		}, {
+			"id": 28,
+			"name": "数据线",
+			"image": "productcate/145569244223.png"
+		}, {
+			"id": 22,
+			"name": "耳机",
+			"image": "productcate/145569243328.png"
+		}]
+	}
+}

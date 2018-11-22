@@ -1,0 +1,59 @@
+{
+	"code": 0,
+	"request_tag": "e037f91e-6614-47df-a364-3f081b2df33c",
+	"data": {
+		"result": [
+		{
+			"name": "全部类型",
+			"product_id": 100
+		}, {
+			"name": "X",
+			"product_id": 760
+		}, {
+			"name": "Z18",
+			"product_id": 740
+		}, {
+			"name": "红魔电竞手机",
+			"product_id": 717
+		}, {
+			"name": "V18 全面屏",
+			"product_id": 702
+		}, {
+			"name": "Z18mini",
+			"product_id": 711
+		}, {
+			"name": "Z17S 全面屏",
+			"product_id": 668
+		}, {
+			"name": "Z17 旗舰版",
+			"product_id": 641
+		}, {
+			"name": "Z17miniS 小牛8",
+			"product_id": 669
+		}, {
+			"name": " N3",
+			"product_id": 701
+		}, {
+			"name": " Z17mini",
+			"product_id": 621
+		}, {
+			"name": " Z11",
+			"product_id": 552
+		}, {
+			"name": " M2 青春版",
+			"product_id": 598
+		}, {
+			"name": " N2",
+			"product_id": 599
+		}, {
+			"name": " M2 畅玩版",
+			"product_id": 652
+		}, {
+			"name": "Z17 畅享版",
+			"product_id": 662
+		}, {
+			"name": "M3",
+			"product_id": 752
+		}]
+	}
+}
