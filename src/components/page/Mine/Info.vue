@@ -20,7 +20,8 @@
 					<p>{{item.title}}</p>	
 				</li>
 			</ul>
-		</div><hr>
+		</div>
+		<div class="bottom_border"></div>
 		<div class="order">
 			<div class="order_all">
 				<span>全部订单</span>
@@ -37,11 +38,21 @@
 					</li>
 				</ul>
 			</div>
-		</div><hr>
+		</div>
+		<div class="bottom_border"></div>
 		<div class="list">
 			<ul>
 				<li 
 				v-for="(item,index) in list3"
+				:key="index"
+				>
+				{{item}}<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+			</ul>
+			<div class="bottom_border"></div>
+			<ul>
+				<li 
+				v-for="(item,index) in list4"
 				:key="index"
 				>
 				{{item}}<i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -75,11 +86,13 @@ export default {
                 '我的预约',
                 '我的回收订单',
                 '我的NB码',
-                '我的流量卡',
-                '服务网点',
-                '常见问题',
-                '联系客服'
-            ]
+                '我的流量卡'
+            ],
+			list4: [
+				'服务网点',
+				'常见问题',
+				'联系客服'
+			]
         };
     },	
 	created(){
@@ -165,9 +178,10 @@ export default {
     }
 }
 .list {
-    padding-left: 2rem;
+    
     padding-bottom: 5rem;
     ul {
+		padding-left: 2rem;
         display: block;
         text-align: left;
         li {
