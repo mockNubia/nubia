@@ -1,0 +1,19 @@
+{
+	"code": 0,
+	"request_tag": "b630456a-05bc-4b24-b14a-abbda14a6735",
+	"data": {
+		"result": [ {
+			"id": 717,
+			"image": "pic/153481678448.png",
+			"name": "8GB+128GB",
+			"parameter":"6GB+64GB"
+		},
+		{
+			"id": 717,
+			"image": "pic/153481678448.png",
+			"name": "8GB+128GB",
+			"parameter":"8GB+128GB"
+		}
+		 ]
+	}
+}
