@@ -27,11 +27,13 @@
 			isShowHeader(){
 				var path = this.$route.path.slice(1);
 				switch(path){
-					case 'cart':
-					this.aheader({boolen:false});
+					case 'cate':
+					case 'accessory':
+					case 'phone':
+					this.aheader({boolen:true});
 					break;
 					default :
-					this.aheader({boolen:true});
+					this.aheader({boolen:false});
 				}
 			}
 		},

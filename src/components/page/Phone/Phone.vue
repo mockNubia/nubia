@@ -45,6 +45,8 @@
 			isShowHeader(){
 				var path = this.$route.path.slice(1);
 				switch(path){
+					case 'cate':
+					case 'accessory':
 					case 'phone':
 					this.aheader({boolen:true});
 					break;
