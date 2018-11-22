@@ -7,6 +7,9 @@ import Home from '@/components/page/Home/Home'
 import Cate from '@/components/page/Cate/Cate'
 //引入mine组件
 import Mine from '@/components/page/Mine/Mine'
+import Reg from '@/components/page/Mine/Reg'
+import Login from '@/components/page/Mine/Login'
+import Info from '@/components/page/Mine/Info'
 // 引入cart组件
 import Cart from '@/components/page/Cart/Cart'
 // 引入found组件
@@ -41,7 +44,26 @@ Vue.use(Router)
 			path: '/mine',
 			name: 'mine',
 			component: Mine,
-			props:true
+			props: true,
+			children: [{
+					path: 'info',
+					name: 'info',
+					component: Info,
+					props: true
+				}, {
+					path: 'reg',
+					name: 'reg',
+					component: Reg,
+					props: true
+				},
+				{
+					path: 'login',
+					name: 'login',
+					component: Login,
+					props: true
+				}
+			],
+			redirect: '/mine/info'
 		},
 		{
 			path: '/cart',
