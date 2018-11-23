@@ -43,6 +43,7 @@
 		<div class="list">
 			<ul>
 				<li 
+				class = 'border_bottom'
 				v-for="(item,index) in list3"
 				:key="index"
 				>
@@ -52,6 +53,7 @@
 			<div class="bottom_border"></div>
 			<ul>
 				<li 
+				class = 'border_bottom'
 				v-for="(item,index) in list4"
 				:key="index"
 				>

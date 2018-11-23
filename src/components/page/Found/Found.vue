@@ -1,6 +1,6 @@
 <template>
 	<div class="found">
-		this is found
+		这是发现页
 	</div>
 </template>
 <script>
