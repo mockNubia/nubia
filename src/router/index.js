@@ -22,6 +22,8 @@ import NotFound from '@/components/page/NotFound/NotFound'
 import Phone from '@/components/page/Phone/Phone'
 //引入Product组件
 import Product from '@/components/page/Product/Product'
+//vuex
+import store from '../store'
 //注册路由
 Vue.use(Router)
 
@@ -106,8 +108,29 @@ const router = new Router({
 		}
 	],
 })
-
-
+router.beforeEach((to,from,next)=>{
+	switch(to.name){
+		case 'cate':
+		store.dispatch('aheader',{boolen:true});
+		store.dispatch('changeTitle',{title:'商品分类'});
+		break;
+		case 'accessory':
+		store.dispatch('aheader',{boolen:true});
+		store.dispatch('changeTitle',{title:'配件'});
+		break;
+		case 'phone':
+		store.dispatch('aheader',{boolen:true});
+		store.dispatch('changeTitle',{title:'努比亚手机'});
+		break;
+		case 'product':
+		store.dispatch('aheader',{boolen:true});
+		store.dispatch('changeTitle',{title:'商品详情'});
+		break;
+		default :
+		store.dispatch('aheader',{boolen:false});
+	}
+	next()
+})
 
 
 export default router

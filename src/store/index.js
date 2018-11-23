@@ -1,7 +1,7 @@
 import vue from 'vue';
 import vuex from 'vuex';
 vue.use(vuex);
- export default new vuex.Store({
+  const store = new vuex.Store({
 	state:{
 		name:'dafsioi',
 		headerTitle:'',
@@ -13,6 +13,7 @@ vue.use(vuex);
     },
 		AHEADER (state,boolen) {
 			state.aheader = boolen;
+			console.log(state.aheader);
 		}
   },
 	actions: {
@@ -24,3 +25,4 @@ vue.use(vuex);
 		}
 	}
 })
+export default store

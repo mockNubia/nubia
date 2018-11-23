@@ -16,7 +16,6 @@
 	import Banner from './Banner'
 	import ShowBig from './ShowBig'
 	import ShowProduct from './ShowProduct'
-	import { mapActions } from 'Vuex'
 	export default {
 		name:'home',
 		data(){
@@ -29,24 +28,6 @@
 		},
 		components:{
 			IndexHeader,Banner,ShowBig,ShowProduct
-		},
-		methods:{
-			...mapActions(['aheader']),
-			isShowHeader(){
-				var path = this.$route.path.slice(1);
-				switch(path){
-					case 'cate':
-					case 'accessory':
-					case 'phone':
-					this.aheader({boolen:true});
-					break;
-					default :
-					this.aheader({boolen:false});
-				}
-			}
-		},
-		created(){
-			this.isShowHeader()
 		}
 	}
 </script>

@@ -10,7 +10,6 @@
 import Login from './Login.vue';
 import Reg from './Reg.vue';
 import Info from './Info.vue';
-import { mapActions } from 'vuex'
 
 export default {
     name: 'Mine',
@@ -23,20 +22,6 @@ export default {
         };
     },
     methods: {
-		...mapActions(['aheader']),
-		isShowHeader(){
-			var path = this.$route.path.slice(1);
-			console.log(path);
-			switch(path){
-				case 'cate':
-				case 'accessory':
-				case 'phone':
-				this.aheader({boolen:true});
-				break;
-				default :
-				this.aheader({boolen:false});
-			}
-		},
         toggle(val) {
             this.selInit = val;
         },
@@ -45,10 +30,7 @@ export default {
 			storage.username = this.username;
 			storage.password = this.password;
 		}
-    },
-	created(){
-		this.isShowHeader()
-	}
+    }
     
 };
 </script>
