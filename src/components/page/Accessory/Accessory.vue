@@ -62,6 +62,7 @@
 </script>
 <style lang = 'scss' scoped>
 	.accessory{
+		min-height: 60vh;
 		.showList{
 			background: #f6f6f6;
 		}

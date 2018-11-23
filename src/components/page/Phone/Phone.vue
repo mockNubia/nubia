@@ -49,5 +49,7 @@
 	}
 </script>
 <style>
-	
+	.phone{
+		min-height: 125vh;
+	}
 </style>

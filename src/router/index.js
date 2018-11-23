@@ -126,8 +126,21 @@ router.beforeEach((to,from,next)=>{
 		store.dispatch('aheader',{boolen:true});
 		store.dispatch('changeTitle',{title:'商品详情'});
 		break;
+		case 'cart':
+		store.dispatch('aheader',{boolen:true});
+		store.dispatch('changeTitle',{title:'购物车'});
+		break;
 		default :
 		store.dispatch('aheader',{boolen:false});
+	};
+	switch(to.name){
+		case 'phone':
+		case 'accessory':
+		case 'product':
+		store.dispatch('tabbar',{boolen:false});
+		break;
+		default:
+		store.dispatch('tabbar',{boolen:true});
 	}
 	next()
 })

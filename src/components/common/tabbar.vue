@@ -1,5 +1,5 @@
 <template>
-		<div class="weui-tabbar tabbar">
+		<div class="weui-tabbar tabbar" v-show = "isShowTabbar">
 			<router-link 
 				exact
 				active-class = 'weui-bar__item_on'
@@ -16,6 +16,7 @@
 		</div>
 </template>
 <script>
+	import { mapState } from 'vuex'
 	export default {
 		name:'Tabbar',
 		data(){
@@ -28,6 +29,13 @@
 					{title:'我的',path:'mine',icon:'user-o'}
 				]
 			}
+		},
+		computed:{
+			...mapState({
+				isShowTabbar:state=>{
+					return state.tabbar;
+				}
+			})
 		}
 	}
 </script>

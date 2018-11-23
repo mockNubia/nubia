@@ -1,8 +1,10 @@
 <template>
 	<div class="cart">
-		<div class="unCart">
+		<div class="unCart" v-if = "!ShowCart">
 			<CartHeader></CartHeader>
 			<BuyCart></BuyCart>
+		</div>
+		<div class="proCart main">
 		</div>
 	</div>
 </template>
@@ -15,11 +17,16 @@
 		data(){
 			return{
 				num:[],
-				testStr:''
+				testStr:'',
+				ShowCart:false
 			}
 		},
 		components:{
 			CartHeader,BuyCart
+		},
+		methods:{
+			isShowCart(){
+			}
 		}
 	}
 </script>

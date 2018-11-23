@@ -16,6 +16,7 @@
 </script>
 <style lang = "scss" scoped>
 	.noproduct{
+		margin-top:5.22rem;
 		padding:5rem 10rem;
 		background: rgb(236, 236, 236);
 		text-align: center;

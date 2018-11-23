@@ -6,6 +6,7 @@ vue.use(vuex);
 		name:'dafsioi',
 		headerTitle:'',
 		aheader:false,
+		tabbar:true
 	},
 	mutations: {
     CHANGETITLE (state,title) {
@@ -13,7 +14,9 @@ vue.use(vuex);
     },
 		AHEADER (state,boolen) {
 			state.aheader = boolen;
-			console.log(state.aheader);
+		},
+		TABBAR (state,boolen) {
+			state.tabbar = boolen;
 		}
   },
 	actions: {
@@ -22,6 +25,9 @@ vue.use(vuex);
 		},
 		aheader (context , {boolen}) {
 			context.commit('AHEADER',boolen)
+		},
+		tabbar (context , {boolen}) {
+			context.commit('TABBAR',boolen)
 		}
 	}
 })
