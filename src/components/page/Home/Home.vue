@@ -28,6 +28,24 @@
 		},
 		components:{
 			IndexHeader,Banner,ShowBig,ShowProduct
+		},
+		methods:{
+			setData(){
+				if(JSON.parse(localStorage.increase)){
+					return false;
+				}else{
+					var increase = [
+						{title:'+80元得 努比亚圈铁耳机',id:750,incshow:false},
+						{title:'+69元得 努比亚蓝牙耳机',id:890,incshow:false},
+						{title:'+29元得 努比亚炫美自拍杆',id:785,incshow:false},
+						{title:'+89元得 便携移动电源',id:972,incshow:false}
+					];
+					localStorage.increase = JSON.stringify(increase);
+				}
+			}
+		},
+		created(){
+			this.setData();
 		}
 	}
 </script>

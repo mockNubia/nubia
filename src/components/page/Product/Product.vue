@@ -1,7 +1,15 @@
 <template>
 	<div class="product main">
-		<ProductMain></ProductMain>
-		<ProductTabbar></ProductTabbar>
+		<ProductMain 
+			:buypro = 'buypro'
+			:addInCar = 'addInCar'
+			@buy = 'buied' 
+			:addCar = 'addInCart'
+		></ProductMain>
+		<ProductTabbar 
+			@buy = 'buied' 
+			:addCar = 'addInCart'
+		></ProductTabbar>
 	
 	</div>
 	
@@ -13,12 +21,23 @@
 		name : 'Product',
 		data(){
 			return{
-				
+				buypro:false,
+				addInCar:false
 			}
 		},
 		components:{
 			ProductTabbar,
 			ProductMain
+		},
+		methods:{
+			buied(){
+				this.buypro = !this.buypro;
+				// console.log(this.buypro);
+			},
+			addInCart(){
+				this.addInCar = !this.addInCar;
+				// console.log(this.addInCar);
+			}
 		}
 	}
 </script>

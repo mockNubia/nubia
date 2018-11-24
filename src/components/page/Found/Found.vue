@@ -1,6 +1,6 @@
 <template>
-	<div class="found">
-		这是发现页
+	<div class="found main">
+		板块开发中，敬请期待！
 	</div>
 </template>
 <script>
@@ -15,5 +15,7 @@
 	}
 </script>
 <style lang = 'scss' scoped>
-	
+	.found{
+		text-align: center;
+	}
 </style>

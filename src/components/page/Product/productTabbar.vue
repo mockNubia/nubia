@@ -2,14 +2,28 @@
 	<div class="productTabbar">
 		<i class = "fa fa-headphones fa-2x"></i>
 		<i class = "fa fa-star-o fa-2x"></i>
-		<div class="addCart">加入购物车</div>
-		<div class="buy">立即购买</div>
+		<div class="addCart" @click = 'addCar'>加入购物车</div>
+		<div class="buy" @click = 'buying'>立即购买</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		
+		name:'ProductTabbar',
+		props:['addCar'],
+		data(){
+			return{
+				
+			}
+		},
+		methods:{
+			addCart(){
+				this.addCar;
+			},
+			buying(){
+				this.$emit('buy')
+			}
+		}
 	}
 </script>
 

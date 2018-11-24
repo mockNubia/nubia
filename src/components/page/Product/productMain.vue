@@ -1,11 +1,11 @@
 <template>
 	<div class="productMain">
 		<div class="pic">
-			<img src="../../../../static/imgs/blockimage/152341321867.png" alt="">
+			<img :src="`../../../../static/imgs/${proimg}`" :alt="proid">
 		</div>
 		<div class="bottom_border"></div>
-		<p class = 'productitle'>Z18mini清水套 透明 <i class = 'share fa fa-share-alt'></i></p>
-		<p class="proprice">￥1299.00元</p>
+		<p class = 'productitle'>{{protitle}} {{procolor}}<i class = 'share fa fa-share-alt'></i></p>
+		<p class="proprice">￥{{proprice}}.00元</p>
 		<p class="sale">促销</p>
 		<div class = 'song'>
 			<p><span>赠牛豆</span>购买完成可获得与支付金额相同数目的牛豆</p>
@@ -45,7 +45,70 @@
 
 <script>
 	export default {
-		
+		name:'ProudctMain',
+		props:['buypro','addInCar','addCar'],
+		data(){
+			return{
+				proid:'',
+				protitle:'',
+				proprice:0,
+				proimg:'',
+				procolor:'',
+				proesc:[]
+			}
+		},
+		methods:{
+			getpro(){
+				var query = this.$route.query;
+				this.proid = query.id;
+				this.protitle = query.title;
+				this.proprice = query.price;
+				this.proimg = query.imgUrl;
+				this.procolor = query.color_name;
+			},
+			getCars(){
+				this.proesc = JSON.parse(localStorage.proesc ? localStorage.proesc:'[]')
+			},
+			setCars(){
+				var pro = {};
+				pro.id = this.proid;
+				pro.title = this.protitle;
+				pro.price = this.proprice;
+				pro.img = this.proimg;
+				pro.color_name = this.procolor;
+				var has = this.proesc.some((item)=>{
+					if(item.id === pro.id){
+						item.num++;
+						console.log(111);
+						return true;
+					}
+				});
+				if(!has){
+					pro.num = 1;
+					this.proesc.unshift(pro);
+				}
+				localStorage.proesc = JSON.stringify(this.proesc);
+			}
+		},
+		watch:{
+			addInCar:function(newVal,oldVal){
+				if(newVal){
+					this.setCars();
+					this.addCar();
+				}
+			},
+			buypro:function(newVal,oldVal){
+				if(newVal){
+					this.setCars();
+					this.$emit('addCar');
+					this.$router.push('/cart');
+				}
+			}
+		},
+		created(){
+			this.getpro();
+			this.getCars();
+		}
 	}
 </script>
 
