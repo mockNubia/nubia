@@ -117,14 +117,17 @@ router.beforeEach((to,from,next)=>{
 		case 'accessory':
 		store.dispatch('aheader',{boolen:true});
 		store.dispatch('changeTitle',{title:'配件'});
+		store.dispatch('tabbar',{boolen:false});
 		break;
 		case 'phone':
 		store.dispatch('aheader',{boolen:true});
 		store.dispatch('changeTitle',{title:'努比亚手机'});
+		store.dispatch('tabbar',{boolen:false});
 		break;
 		case 'product':
 		store.dispatch('aheader',{boolen:true});
 		store.dispatch('changeTitle',{title:'商品详情'});
+		store.dispatch('tabbar',{boolen:false});
 		break;
 		case 'cart':
 		store.dispatch('aheader',{boolen:true});
@@ -132,16 +135,8 @@ router.beforeEach((to,from,next)=>{
 		break;
 		default :
 		store.dispatch('aheader',{boolen:false});
-	};
-	switch(to.name){
-		case 'phone':
-		case 'accessory':
-		case 'product':
-		store.dispatch('tabbar',{boolen:false});
-		break;
-		default:
 		store.dispatch('tabbar',{boolen:true});
-	}
+	};
 	next()
 })
 
