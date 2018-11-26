@@ -31,7 +31,7 @@
 		},
 		methods:{
 			setData(){
-				if(JSON.parse(localStorage.increase)){
+				if(localStorage.increase === undefined){
 					return false;
 				}else{
 					var increase = [

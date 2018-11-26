@@ -196,6 +196,8 @@
 		},
 		created(){
 			this.getIncrease();
+		},
+		mounted(){
 			this.totalprice();
 		}
 	}
