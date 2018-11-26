@@ -108,9 +108,7 @@
 						"image": "pic/152118859076.jpg"
 					}
 				],
-				increaseItem:[
-					
-				],
+				increaseItem:[],
 				increase:[],
 				total:0
 			}

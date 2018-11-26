@@ -93,7 +93,6 @@ export default {
        padding: 5rem 0 0 0;
 			 span{
 				 text-decoration: underline;
-			 }
     }
 }
 </style>

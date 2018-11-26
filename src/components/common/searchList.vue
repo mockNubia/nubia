@@ -132,7 +132,6 @@
 						color: #9a9b9d;
 					}
 				}
-		
 				.newProduct.active,.priceSort.active {
 					color: red;
 				}

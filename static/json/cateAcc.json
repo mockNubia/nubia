@@ -4,23 +4,23 @@
 	"data": {
 		"result": [{
 			"id": 31,
-			"name": "保护壳",
+			"title": "保护壳",
 			"image": "productcate/145569239481.png"
 		}, {
 			"id": 30,
-			"name": "皮套",
+			"title": "皮套",
 			"image": "productcate/145569240480.png"
 		}, {
 			"id": 29,
-			"name": "贴膜",
+			"title": "贴膜",
 			"image": "productcate/145569241389.png"
 		}, {
 			"id": 28,
-			"name": "数据线",
+			"title": "数据线",
 			"image": "productcate/145569244223.png"
 		}, {
 			"id": 22,
-			"name": "耳机",
+			"title": "耳机",
 			"image": "productcate/145569243328.png"
 		}]
 	}

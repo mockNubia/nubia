@@ -1,5 +1,4 @@
 <template>
-
 		<div class="weui-tabbar tabbar" v-show = "isShowTabbar">
 			<router-link 
 				exact
@@ -17,7 +16,7 @@
 		</div>
 </template>
 <script>
-	import {mapState} from 'Vuex'
+	import { mapState } from 'vuex'
 	export default {
 		name:'Tabbar',
 		data(){
@@ -33,11 +32,10 @@
 		},
 		computed:{
 			...mapState({
-				isShowTabbar:(state)=>{
-					return state.tabbar
+				isShowTabbar:state=>{
+					return state.tabbar;
 				}
-			}
-			)
+			})
 		}
 	}
 </script>

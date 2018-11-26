@@ -2,9 +2,9 @@
 
   <div id="app">
 		<Aheader></Aheader>
-		<keep-live exclude = "Cart,Product,phone,accessory">
-			<router-view></router-view>
-		</keep-live>
+		<keep-alive exclude = 'Cart,Product,phone,accessory'>
+				<router-view></router-view>
+		</keep-alive>
 		<Tabbar></Tabbar>
   </div>
 </template>

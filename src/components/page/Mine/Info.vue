@@ -20,7 +20,6 @@
 					<p>{{item.title}}</p>	
 				</li>
 			</ul>
-
 		</div>
 		<div class="bottom_border"></div>
 		<div class="order">

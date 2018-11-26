@@ -32,11 +32,9 @@
 		methods:{
 			buied(){
 				this.buypro = !this.buypro;
-				// console.log(this.buypro);
 			},
 			addInCart(){
 				this.addInCar = !this.addInCar;
-				// console.log(this.addInCar);
 			}
 		}
 	}

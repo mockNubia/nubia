@@ -6,7 +6,6 @@
 			v-for = "(product,index) in showProducts"
 			:key = product.sid
 			:style = "{marginRight : (index+1)%2 == 0 ? '0px' : '2px',background : $route.path != '/' ? '#fff' : '#f4f3ef'}"
-
 			:to = "{name:'product',
 			query:{id:product.sid,title:product.title,price:product.price,imgUrl:product.image,color_name:product.color_name}}"
 		>
@@ -14,7 +13,6 @@
 				<img :src="`../../../static/imgs/${product.image}`" alt="">
 			</div>
 			<div class = 'product_sec' v-if = 'type ===1 '>
-
 				<p class = 'product_title'>{{product.title}}{{product.color_name}}</p>
 				<p class = 'sub_title'>{{product.sub_title}}</p>
 				<p class = 'prices'>

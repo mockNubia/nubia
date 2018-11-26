@@ -1,12 +1,12 @@
 <template>
 	<div class="cateList">
 		<ul class = 'cateItem'>
-			<router-link :to = "{name:path,query:{id:cate.id}}" class = 'items'
+			<router-link :to = "{name:path,query:{id:cate.id,title:cate.title,price:cate.price,imgUrl:cate.image,color_name:cate.color_name}}" class = 'items'
 			 v-for = 'cate in cateList.result'
 			 :key = "cate.id"
 			 >
 				<img v-lazy="'../../../../static/imgs/'+cate.image" alt="">
-				<p>{{cate.name}}</p>
+				<p>{{cate.title}}</p>
 			</router-link>
 		</ul>
 	</div>
