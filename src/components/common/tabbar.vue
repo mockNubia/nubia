@@ -17,6 +17,7 @@
 		</div>
 </template>
 <script>
+	import {mapState} from 'Vuex'
 	export default {
 		name:'Tabbar',
 		data(){
@@ -29,6 +30,14 @@
 					{title:'我的',path:'mine',icon:'user-o'}
 				]
 			}
+		},
+		computed:{
+			...mapState({
+				isShowTabbar:(state)=>{
+					return state.tabbar
+				}
+			}
+			)
 		}
 	}
 </script>
