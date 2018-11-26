@@ -122,8 +122,6 @@
 					color: #51545a;
 					position: relative;
 					font-size: 3rem;
-		
-					
 				}
 		
 				.priceSort {
@@ -135,8 +133,7 @@
 					}
 				}
 		
-				.newProduct.active,
-				.priceSort.active {
+				.newProduct.active,.priceSort.active {
 					color: red;
 				}
 			}

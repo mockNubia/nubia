@@ -22,11 +22,8 @@ import NotFound from '@/components/page/NotFound/NotFound'
 import Phone from '@/components/page/Phone/Phone'
 //引入Product组件
 import Product from '@/components/page/Product/Product'
-<<<<<<< HEAD
-=======
 //vuex
 import store from '../store'
->>>>>>> moguo
 //注册路由
 Vue.use(Router)
 
