@@ -2,7 +2,7 @@
 
   <div id="app">
 		<Aheader></Aheader>
-		<keep-live exclude = "Cart,Product">
+		<keep-live exclude = "Cart,Product,phone,accessory">
 			<router-view></router-view>
 		</keep-live>
 		<Tabbar></Tabbar>
