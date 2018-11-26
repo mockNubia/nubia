@@ -1,35 +1,48 @@
 <template>
-	<div class="product main">这是手机页面</div>
+	<div class="product main">
+		<ProductMain 
+			:buypro = 'buypro'
+			:addInCar = 'addInCar'
+			@buy = 'buied' 
+			:addCar = 'addInCart'
+		></ProductMain>
+		<ProductTabbar 
+			@buy = 'buied' 
+			:addCar = 'addInCart'
+		></ProductTabbar>
+	
+	</div>
+	
 </template>
 <script>
-	import { mapActions } from 'vuex'
+	import ProductTabbar from './productTabbar'
+	import ProductMain from './productMain'
 	export default {
 		name : 'Product',
-		methods:{
-			...mapActions(['changeTitle','aheader']),
-			getRouter(){
-				var path = this.$route.path;
-				if(path === '/product'){
-					this.changeTitle({title:'商品详情'})
-				}
-			},
-			isShowHeader(){
-				var path = this.$route.path.slice(1);
-				switch(path){
-					case 'product':
-					this.aheader({boolen:true});
-					break;
-					default :
-					this.aheader({boolen:false});
-				}
+		data(){
+			return{
+				buypro:false,
+				addInCar:false
 			}
 		},
-		created(){
-			this.getRouter();
-			this.isShowHeader()
+		components:{
+			ProductTabbar,
+			ProductMain
+		},
+		methods:{
+			buied(){
+				this.buypro = !this.buypro;
+				// console.log(this.buypro);
+			},
+			addInCart(){
+				this.addInCar = !this.addInCar;
+				// console.log(this.addInCar);
+			}
 		}
 	}
 </script>
 <style>
-	
+	.main{
+		margin-bottom: 6.24rem;
+	}
 </style>

@@ -1,24 +1,16 @@
 <template>
 	<div class="show_big">
-		<router-link 
-			to = "/product?id=1247"
-			class="left">
+		<div class="left">
 			<img id = '1247' src="../../../../static/imgs/blockimage/154098916096.jpg" alt="X">
-		</router-link>
+		</div>
 		<div class="right">
 			<ul>
-				<router-link
-					tag = 'li'
-					to = "/product?id=1324"
-				>
+				<li>
 					<img id = '1324' src="../../../../static/imgs/blockimage/154098947664.jpg" alt="Z18">
-				</router-link>
-				<router-link
-					tag = 'li'
-					to = "/product?id=1248"
-				>
+				</li>
+				<li>
 					<img id = '1248' src="../../../../static/imgs/blockimage/154098899870.jpg" alt="红魔">
-				</router-link>
+				</li>
 			</ul>
 		</div>
 	</div>

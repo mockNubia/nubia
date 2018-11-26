@@ -31,6 +31,11 @@
 </script>
 <style lang = 'scss' scoped>
 	.cartHeader{
+		position:fixed;
+		z-index:1000;
+		top:0;
+		left:0;
+		right:0;
 		height:5.22rem;
 		background: #fff;
 		.cartHeaderText{
@@ -53,7 +58,5 @@
 			}
 			
 		}
-		
-		
 	}
 </style>

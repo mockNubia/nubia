@@ -24,12 +24,12 @@ export default {
     methods: {
         toggle(val) {
             this.selInit = val;
-        }
-    },
-    login() {
-        let storage = window.localStorage;
-        storage.username = this.username;
-        storage.password = this.password;
+        },
+		login() {
+			let storage = window.localStorage;
+			storage.username = this.username;
+			storage.password = this.password;
+		}
     }
 };
 </script>

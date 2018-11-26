@@ -12,7 +12,6 @@
 </template>
 <script>
 	import CateList from './CateList'
-	import { mapActions } from 'vuex'
 	export default {
 		name:'Cate',
 		data(){
@@ -27,29 +26,6 @@
 		},
 		components:{
 			CateList
-		},
-		methods:{
-			...mapActions(['changeTitle','aheader']),
-			getRouter(){
-				var path = this.$route.path;
-				if(path === '/cate'){
-					this.changeTitle({title:'商品分类'})
-				}
-			},
-			isShowHeader(){
-				var path = this.$route.path.slice(1);
-				switch(path){
-					case 'cate':
-					this.aheader({boolen:true});
-					break;
-					default :
-					this.aheader({boolen:false});
-				}
-			}
-		},
-		created(){
-			this.getRouter();
-			this.isShowHeader()
 		}
 	}
 </script>

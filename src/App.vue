@@ -6,7 +6,6 @@
 		<Tabbar></Tabbar>
   </div>
 </template>
-
 <script>
 	import Aheader from './components/common/Aheader'
 	import Home from './components/page/Home/Home'
@@ -20,7 +19,6 @@ export default {
 	}
 }
 </script>
-
 <style lang = 'scss'>
 	#app{
 		font-size:3.2rem;

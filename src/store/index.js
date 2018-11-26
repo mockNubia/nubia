@@ -1,11 +1,12 @@
 import vue from 'vue';
 import vuex from 'vuex';
 vue.use(vuex);
- export default new vuex.Store({
+  const store = new vuex.Store({
 	state:{
 		name:'dafsioi',
 		headerTitle:'',
 		aheader:false,
+		tabbar:true
 	},
 	mutations: {
     CHANGETITLE (state,title) {
@@ -13,6 +14,9 @@ vue.use(vuex);
     },
 		AHEADER (state,boolen) {
 			state.aheader = boolen;
+		},
+		TABBAR (state,boolen) {
+			state.tabbar = boolen;
 		}
   },
 	actions: {
@@ -21,6 +25,10 @@ vue.use(vuex);
 		},
 		aheader (context , {boolen}) {
 			context.commit('AHEADER',boolen)
+		},
+		tabbar (context , {boolen}) {
+			context.commit('TABBAR',boolen)
 		}
 	}
 })
+export default store

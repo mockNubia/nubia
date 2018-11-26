@@ -1,5 +1,6 @@
 <template>
-		<div class="weui-tabbar tabbar">
+
+		<div class="weui-tabbar tabbar" v-show = "isShowTabbar">
 			<router-link 
 				exact
 				active-class = 'weui-bar__item_on'

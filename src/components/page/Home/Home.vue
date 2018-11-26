@@ -16,7 +16,6 @@
 	import Banner from './Banner'
 	import ShowBig from './ShowBig'
 	import ShowProduct from './ShowProduct'
-	import { mapActions } from 'Vuex'
 	export default {
 		name:'home',
 		data(){
@@ -31,20 +30,22 @@
 			IndexHeader,Banner,ShowBig,ShowProduct
 		},
 		methods:{
-			...mapActions(['aheader']),
-			isShowHeader(){
-				var path = this.$route.path.slice(1);
-				switch(path){
-					case '':
-					this.aheader({boolen:false});
-					break;
-					default :
-					this.aheader({boolen:true});
+			setData(){
+				if(JSON.parse(localStorage.increase)){
+					return false;
+				}else{
+					var increase = [
+						{title:'+80元得 努比亚圈铁耳机',id:750,incshow:false},
+						{title:'+69元得 努比亚蓝牙耳机',id:890,incshow:false},
+						{title:'+29元得 努比亚炫美自拍杆',id:785,incshow:false},
+						{title:'+89元得 便携移动电源',id:972,incshow:false}
+					];
+					localStorage.increase = JSON.stringify(increase);
 				}
 			}
 		},
 		created(){
-			this.isShowHeader()
+			this.setData();
 		}
 	}
 </script>

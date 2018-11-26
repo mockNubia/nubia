@@ -3,12 +3,35 @@
 		<span class="logo">
 			<img src="../../../assets/m-logo.png" alt="">
 		</span>
-		<i class="person fa fa-user-o"> 登录</i>
+		<router-link 
+			class="person fa fa-user-o"
+			to = '/mine/login'
+			> {{username}}</router-link>
 	</div>
 </template>
 <script>
 	export default {
-		name:'IndexHeader'
+		name:'IndexHeader',
+		data(){
+			return{
+				username:'登录'
+			}
+		},
+		methods:{
+			islogin(){
+				let storage = window.localStorage;
+				let username = storage.username;
+				let password = storage.password;
+				if(username&&password){
+					this.username=username
+				}else{
+					this.username='登录'
+				}
+			}
+		},
+		created(){
+			this.islogin();
+		}
 	}
 </script>
 <style lang = "scss" scoped>

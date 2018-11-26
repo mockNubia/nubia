@@ -1,44 +1,54 @@
 <template>
 	<div class="cart">
-		<div class="unCart">
+		<div class="unCart" v-if = "!ShowCart">
 			<CartHeader></CartHeader>
-			<BuyCart></BuyCart>
+			<unBuyCart></unBuyCart>
 		</div>
+		<div class="proCart main">
+			<BuyCart :nums = 'num'></BuyCart>
+		</div>
+		<CarTabbar
+			:showTabbar = 'showTabbar'
+		></CarTabbar>
 	</div>
 </template>
 <script>
-	import { mapActions } from 'vuex'
 	import CartHeader from './CartHeader'
+	import unBuyCart from './unBuyCart'
 	import BuyCart from './BuyCart'
+	import CarTabbar from './CarTabbar'
 
 	export default {
 		name:'Cart',
 		data(){
 			return{
 				num:[],
-				testStr:''
+				testStr:'',
+				ShowCart:false,
+				showTabbar:false
 			}
 		},
 		components:{
-			CartHeader,BuyCart
+			CartHeader,unBuyCart,BuyCart,CarTabbar
 		},
 		methods:{
-			...mapActions(['aheader']),
-			isShowHeader(){
-				var path = this.$route.path.slice(1);
-				switch(path){
-					case 'cart':
-					this.aheader({boolen:false});
-					break;
-					default :
-					this.aheader({boolen:true});
-				}
+			getNum(){
+				this.num = JSON.parse(localStorage.proesc ? localStorage.proesc:'[]');
 			}
 		},
 		watch:{
+			num:function(newVal,oldVal){
+				if(newVal.length){
+					this.ShowCart = true;
+					this.showTabbar = true
+				}else{
+					this.ShowCart = false;
+					this.showTabbar = false
+				};
+			}
 		},
 		created(){
-			this.isShowHeader()
+			this.getNum();
 		}
 	}
 </script>

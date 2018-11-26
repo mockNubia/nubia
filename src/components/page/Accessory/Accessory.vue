@@ -19,8 +19,6 @@
 <script>
 	import ShowProductItem from '../../common/showProductItem.vue'
 	import SearchList from '../../common/searchList.vue' 
-	
-	import { mapActions } from 'vuex' 
 	export default {
 		name:'Accessory',
 		data(){
@@ -37,23 +35,6 @@
 			SearchList
 		},
 		methods:{
-			...mapActions(['changeTitle','aheader']),
-			getRouter(){
-				var path = this.$route.path;
-				if(path === '/accessory'){
-					this.changeTitle({title:'配件'})
-				}
-			},
-			isShowHeader(){
-				var path = this.$route.path.slice(1);
-				switch(path){
-					case 'accessory':
-					this.aheader({boolen:true});
-					break;
-					default :
-					this.aheader({boolen:false});
-				}
-			},
 			getAccessory(){
 				this.$Axios.get('../../../../static/json/searchAcc.json')
 				.then((res)=>{
@@ -73,15 +54,15 @@
 			}
 		},
 		created(){
-			this.getRouter();
-			this.isShowHeader();
 			this.getAccessory();
 			this.changeSearchId(this.$route.query.id);
 		}
 	}
 </script>
 <style lang = 'scss' scoped>
+
 	.accessory{
+		min-height: 60vh;
 		.showList{
 			background: #f6f6f6;
 		}
