@@ -54,10 +54,6 @@
 							"incshow":false
 							}
 					]);
-					console.log(JSON.parse(localStorage.increase));
-					console.log(1111);
-				}else{
-					console.log(localStorage.increase)
 				}
 			}
 		},

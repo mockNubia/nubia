@@ -119,7 +119,7 @@
 			padding:0 2rem;
 			img{
 				width:100%;
-
+				height: 35.084rem;
 			}
 		}
 		.productitle{

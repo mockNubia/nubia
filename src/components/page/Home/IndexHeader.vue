@@ -5,7 +5,7 @@
 		</span>
 		<router-link 
 			class="person fa fa-user-o"
-			to = '/mine/login'
+			:to = 'topath'
 			> {{username}}</router-link>
 	</div>
 </template>
@@ -14,7 +14,8 @@
 		name:'IndexHeader',
 		data(){
 			return{
-				username:'登录'
+				username:'登录',
+				topath:'/mine/login'
 			}
 		},
 		methods:{
@@ -23,13 +24,18 @@
 				let username = storage.username;
 				let password = storage.password;
 				if(username&&password){
-					this.username=username
+					this.username=username;
+					this.topath = '/mine/info';
 				}else{
-					this.username='登录'
+					this.username='登录';
+					this.topath = '/mine/login';
 				}
 			}
 		},
 		created(){
+			this.islogin();
+		},
+		activated(){
 			this.islogin();
 		}
 		

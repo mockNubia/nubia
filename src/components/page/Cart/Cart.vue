@@ -4,7 +4,7 @@
 			<CartHeader></CartHeader>
 			<unBuyCart></unBuyCart>
 		</div>
-		<div class="proCart main">
+		<div class="proCart main" v-else>
 			<BuyCart :nums = 'num'></BuyCart>
 		</div>
 		<CarTabbar

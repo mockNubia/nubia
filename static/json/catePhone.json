@@ -5,63 +5,63 @@
 		"result": [{
 			"id": 760,
 			"image": "pic/15409757545.png",
-			"name": "nubiaX"
+			"title": "nubiaX"
 		}, {
 			"id": 740,
 			"image": "pic/153612810350.png",
-			"name": "Z18"
+			"title": "Z18"
 		},  {
 			"id": 711,
 			"image": "pic/152274208068.png",
-			"name": "Z18mini"
+			"title": "Z18mini"
 		}, {
 			"id": 702,
 			"image": "pic/153475239028.jpg",
-			"name": "V18 全面屏"
+			"title": "V18 全面屏"
 		}, {
 			"id": 668,
 			"image": "pic/154105606395.png",
-			"name": "Z17S 全面屏"
+			"title": "Z17S 全面屏"
 		}, {
 			"id": 701,
 			"image": "pic/152807870681.jpg",
-			"name": "nubia N3"
+			"title": "nubia N3"
 		}, {
 			"id": 669,
 			"image": "pic/150778759434.jpg",
-			"name": "Z17miniS 小牛8"
+			"title": "Z17miniS 小牛8"
 		}, {
 			"id": 641,
 			"image": "pic/149725499137.jpg",
-			"name": "Z17 旗舰版"
+			"title": "Z17 旗舰版"
 		}, {
 			"id": 621,
 			"image": "pic/15012352623.jpg",
-			"name": "nubia Z17mini"
+			"title": "nubia Z17mini"
 		}, {
 			"id": 552,
 			"image": "pic/148232854475.jpg",
-			"name": "nubia Z11"
+			"title": "nubia Z11"
 		}, {
 			"id": 652,
 			"image": "pic/150121993433.jpg",
-			"name": "nubia M2 畅玩版"
+			"title": "nubia M2 畅玩版"
 		}, {
 			"id": 599,
 			"image": "pic/149006424458.png",
-			"name": "nubia N2"
+			"title": "nubia N2"
 		}, {
 			"id": 598,
 			"image": "pic/149007203157.jpg",
-			"name": "nubia M2 青春版"
+			"title": "nubia M2 青春版"
 		}, {
 			"id": 662,
 			"image": "pic/150408331534.jpg",
-			"name": "Z17 畅享版"
+			"title": "Z17 畅享版"
 		}, {
 			"id": 752,
 			"image": "pic/15373474733.png",
-			"name": "M3"
+			"title": "M3"
 		}]
 	}
 }

@@ -5,43 +5,63 @@
 		"result": [{
 			"id": 720,
 			"image": "pic/152826651329.png",
-			"name": "努比亚红魔游戏T恤"
+			"color_name": "黑色",
+			"price": 99.0,
+			"title": "努比亚红魔游戏T恤"
 		}, {
 			"id": 738,
 			"image": "pic/152999129868.jpg",
-			"name": "努比亚创意贴纸"
+			"color_name": "白色",
+			"price": 29.0,
+			"title": "努比亚创意贴纸"
 		}, {
 			"id": 734,
 			"image": "pic/152602014636.png",
-			"name": "努比亚智能锁"
+			"color_name": "枪黑色",
+			"price": 2699.0,
+			"title": "努比亚智能锁"
 		}, {
 			"id": 718,
 			"image": "pic/152411740470.png",
-			"name": "努比亚过滤防护口罩"
+			"color_name": "黑色",
+			"price": 29.0,
+			"title": "努比亚过滤防护口罩"
 		}, {
 			"id": 719,
 			"image": "pic/152411751382.png",
-			"name": "努比亚游戏背包"
+			"color_name": "灰色",
+			"price": 199.0,
+			"title": "努比亚游戏背包"
 		}, {
 			"id": 700,
 			"image": "pic/152118859076.jpg",
-			"name": "便携移动电源"
+			"color_name": "灰白",
+			"price": 129.0,
+			"title": "便携移动电源"
 		}, {
 			"id": 576,
 			"image": "pic/150149441547.jpg",
-			"name": "努比亚快充移动电源"
+			"color_name": "黑色",
+			"price": 149.0,
+			"title": "努比亚快充移动电源"
 		}, {
 			"id": 622,
 			"image": "pic/149144131933.jpg",
-			"name": "努比亚VR全景相机"
+			"color_name": "黑色",
+			"price": 699.0,
+			"title": "努比亚VR全景相机"
 		}, {
 			"id": 575,
 			"image": "pic/148524162779.png",
-			"name": "努比亚炫美自拍杆"
+			"color_name": "白金",
+			"price": 49.0,
+			"title": "努比亚炫美自拍杆"
 		}, {
 			"id": 478,
 			"image": "pic/150587383541.png",
-			"name": "nubia摄影三脚架"
+			"color_name": "黑色",
+			"price": 129.0,
+			"title": "nubia摄影三脚架"
 		}]
 	}
 }

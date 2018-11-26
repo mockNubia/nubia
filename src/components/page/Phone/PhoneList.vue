@@ -4,7 +4,7 @@
 			class="phoneItems" 
 			v-for="item in phoneList" 
 			:key="item.sid"
-			:to = "{name:'product',query:{id:item.sid}}"
+			:to = "{name:'product',query:{id:item.sid,title:item.title,price:item.price,color_name:item.color_name,imgUrl:item.image}}"
 		>
 			<div class="phoneItem">
 				<div class="phoneImg">
