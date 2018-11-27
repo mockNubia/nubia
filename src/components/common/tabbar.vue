@@ -5,7 +5,7 @@
 				active-class = 'weui-bar__item_on'
 				v-for = '(tabbar,index) in tabbars'
 				:key = "index"
-				:to = "{name:tabbar.path}"
+				:to = "tabbar.path"
 				class="weui-tabbar__item"
 			 >
 				<span style="display: inline-block;position: relative;">
@@ -22,11 +22,11 @@
 		data(){
 			return{
 				tabbars:[
-					{title:'首页',path:'home',icon:'home'},
-					{title:'分类',path:'cate',icon:'th-large'},
-					{title:'发现',path:'found',icon:'search'},
-					{title:'购物车',path:'cart',icon:'shopping-cart'},
-					{title:'我的',path:'mine',icon:'user-o'}
+					{title:'首页',path:'/home',icon:'home'},
+					{title:'分类',path:'/cate',icon:'th-large'},
+					{title:'发现',path:'/found',icon:'search'},
+					{title:'购物车',path:'/cart',icon:'shopping-cart'},
+					{title:'我的',path:'/mine/info',icon:'user-o'}
 				]
 			}
 		},
