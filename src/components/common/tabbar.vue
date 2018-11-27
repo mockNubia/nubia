@@ -1,8 +1,7 @@
 <template>
 		<div class="weui-tabbar tabbar" v-show = "isShowTabbar">
 			<router-link 
-				exact
-				active-class = 'weui-bar__item_on'
+				exact-active-class = 'weui-bar__item_on'
 				v-for = '(tabbar,index) in tabbars'
 				:key = "index"
 				:to = "{name:tabbar.path}"
@@ -26,7 +25,7 @@
 					{title:'分类',path:'cate',icon:'th-large'},
 					{title:'发现',path:'found',icon:'search'},
 					{title:'购物车',path:'cart',icon:'shopping-cart'},
-					{title:'我的',path:'mine',icon:'user-o'}
+					{title:'我的',path:'mine/info',icon:'user-o'}
 				]
 			}
 		},
