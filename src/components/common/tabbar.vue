@@ -22,7 +22,7 @@
 		data(){
 			return{
 				tabbars:[
-					{title:'首页',path:'/home',icon:'home'},
+					{title:'首页',path:'/',icon:'home'},
 					{title:'分类',path:'/cate',icon:'th-large'},
 					{title:'发现',path:'/found',icon:'search'},
 					{title:'购物车',path:'/cart',icon:'shopping-cart'},
